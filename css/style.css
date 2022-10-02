@@ -1,0 +1,110 @@
+/* Geral */
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+}
+
+/* Cores */
+:root {
+  --bg: #242c3b;
+  --color1: linear-gradient(172.11deg, #37b6e9 6.64%, #4b4ced 85.29%);
+  --font1: #f7f7f7;
+  --bgContent: rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  background: var(--color1);
+}
+.header h1 {
+  color: var(--font1);
+}
+
+/* Navegação */
+.navegacao {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.navegacao a {
+  color: var(--font1);
+  font-size: 0.925rem;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #3bc3f9, #32a4d2);
+  padding: 10px 20px;
+}
+
+/* Conteúdo */
+.border {
+  margin: 50px auto;
+  max-width: 500px;
+  background: var(--bgContent);
+  border-radius: 10px;
+  padding: 10px;
+}
+.content {
+  padding: 10px;
+  background: linear-gradient(180deg, #4b6fec -21.54%, #f7f7f7 100%);
+  color: var(--bg);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content input {
+  width: calc(100% - 200px);
+  padding: 10px 0px 10px 5px;
+  font-size: 1.3rem;
+}
+.content h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+.content div {
+  text-align: center;
+  margin: 10px;
+  font-size: 0.955rem;
+}
+.content button {
+  background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+  border-radius: 6px;
+  color: var(--font1);
+  width: calc(100% - 80px);
+  margin: 40px 40px 20px 40px;
+  border: none;
+  padding: 10px 0;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 570px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navegacao {
+    justify-content: center;
+    gap: 25px;
+  }
+  .content button {
+    width: calc(100% - 20px);
+    margin: 40px 10px 20px 10px;
+  }
+  .content input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
