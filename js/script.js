@@ -40,3 +40,6 @@ if(document.documentElement.classList.contains('cripto')) {
 }
 
 
+const input = docuem
+
+
