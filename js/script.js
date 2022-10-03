@@ -1,4 +1,7 @@
-if (document.documentElement.classList.contains('joke')){
+const conteudo = document.querySelector('.border');
+
+
+if (conteudo.classList.contains('joke')){
   const btn = document.querySelector('button');
   const resultado = document.querySelector('.resultado');
 
@@ -21,7 +24,7 @@ if (document.documentElement.classList.contains('joke')){
 joke();
 }
 
-if(document.documentElement.classList.contains('cripto')) {
+if(conteudo.classList.contains('cripto')) {
   const span = document.querySelector('.content span')
 
   setInterval(btc, 20000);
@@ -34,13 +37,13 @@ if(document.documentElement.classList.contains('cripto')) {
       span.innerText = obj.BRL.buy + ',00 R$'
       })
     })
-  
   }
+  btc();
 }
 
 
-if(document.documentElement.classList.contains('cep')){
-  
+if(conteudo.classList.contains('cep')){
+
   const input = document.querySelector('.content input');
 
   input.addEventListener('change', muda);
